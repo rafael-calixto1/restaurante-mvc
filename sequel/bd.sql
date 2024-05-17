@@ -1,6 +1,7 @@
 CREATE TABLE IF NOT EXISTS funcionario(
 	id_func SERIAL PRIMARY KEY,
 	nome VARCHAR(255),
+	senha VARCHAR(8),
 	cpf INTEGER,
 	dt_nasc DATE,
 	cargo VARCHAR(255)
