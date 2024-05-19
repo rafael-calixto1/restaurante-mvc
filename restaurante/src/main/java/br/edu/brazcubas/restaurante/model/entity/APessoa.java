@@ -5,6 +5,17 @@ public abstract class APessoa{
     protected String nome;
     protected String cpf;
 
+    public APessoa(int id, String nome, String cpf) {
+        this.id = id;
+        this.nome = nome;
+        this.cpf = cpf;
+    }
+
+    public APessoa(String nome, String cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
+    }
+
     public void setId(int id){
         this.id = id;
     }
