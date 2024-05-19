@@ -5,6 +5,28 @@ public class ItemPedido {
     private int idPedido;
     private int idPrato;
     private int quantidade;
+    private String nomePrato;
+
+    public ItemPedido(int id, int idPedido, int idPrato, int quantidade) {
+        this.id = id;
+        this.idPedido = idPedido;
+        this.idPrato = idPrato;
+        this.quantidade = quantidade;
+    }
+
+    public ItemPedido(int idPedido, int idPrato, int quantidade) {
+        this.idPedido = idPedido;
+        this.idPrato = idPrato;
+        this.quantidade = quantidade;
+    }
+
+    
+
+    public ItemPedido(int idPedido, int quantidade, String nomePedido) {
+        this.idPedido = idPedido;
+        this.quantidade = quantidade;
+        this.nomePrato = nomePedido;
+    }
 
     public void setId(int id){
         this.id = id;
@@ -37,7 +59,15 @@ public class ItemPedido {
         this.quantidade = quantidade;
     }
 
-    public int getQuntidade(){
+    public int getQuantidade(){
         return this.quantidade;
+    }
+
+    public String getNomePrato() {
+        return nomePrato;
+    }
+
+    public void setNomePrato(String nomePedido) {
+        this.nomePrato = nomePedido;
     }
 }
