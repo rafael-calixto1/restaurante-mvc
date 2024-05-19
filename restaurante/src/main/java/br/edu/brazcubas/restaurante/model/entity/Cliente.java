@@ -1,14 +1,11 @@
 package br.edu.brazcubas.restaurante.model.entity;
-import java.util.Date;
 
 public class Cliente extends APessoa {
-    private Date dataRegistro;
-
-    public void setDataRegistro(Date dataRegistro){
-        this.dataRegistro = dataRegistro;
-    } 
-
-    public Date getDataRegistro(){
-        return this.dataRegistro;
+    public Cliente(int id, String nome, String cpf) {
+        super(id, nome, cpf);
+    }
+    
+    public Cliente(String nome, String cpf) {
+        super(nome, cpf);
     }
 }

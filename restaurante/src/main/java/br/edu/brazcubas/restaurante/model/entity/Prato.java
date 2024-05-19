@@ -7,6 +7,21 @@ public class Prato {
     private Double preco;
     private Double avaliacao;
 
+    public Prato(int id, String nome, String descricao, Double preco, Double avaliacao) {
+        this.id = id;
+        this.nome = nome;
+        this.descricao = descricao;
+        this.preco = preco;
+        this.avaliacao = avaliacao;
+    }
+
+    public Prato(String nome, String descricao, Double preco, Double avaliacao) {
+        this.nome = nome;
+        this.descricao = descricao;
+        this.preco = preco;
+        this.avaliacao = avaliacao;
+    }
+
     public void setId(int id){
         this.id = id;
     }
