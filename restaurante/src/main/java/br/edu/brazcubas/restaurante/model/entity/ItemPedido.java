@@ -37,7 +37,7 @@ public class ItemPedido {
         this.quantidade = quantidade;
     }
 
-    public int getQuntidade(){
+    public int getQuantidade(){
         return this.quantidade;
     }
 }
