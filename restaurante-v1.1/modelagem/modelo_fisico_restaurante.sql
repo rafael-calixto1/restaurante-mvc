@@ -46,3 +46,5 @@ CREATE TABLE IF NOT EXISTS item_pedido(
 	REFERENCES pedido (id_pedido)
 	ON DELETE CASCADE
 );
+
+INSERT INTO funcionario VALUES (default, 'admin', 'admin', '000.000.000-00', '2024-05-28', 'Gerente');
